@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model MyFirstdotNET.Models.AddStudentViewModel //this binds the AddStuentViewModel
+
+
+<h1>Add Student</h1>
+<form method="post">
+
+    <div class="mt-3">
+        <label class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" asp-for="Name"/>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">email</label>
+        <input type="email" name="email" class="form-control" asp-for="Email"/>
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Phone</label>
+        <input type="text" name="phone" class="form-control" asp-for="Phone"/>
+    </div>
+
+    <div class="mt-3">
+        <input type="checkbox" class="form-check-input" id="Subscribed" asp-for="Subscribed"/>
+        <label class="form-check-label" for="Subscribed"> Subscribed </label>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+
+</form>
